@@ -1073,11 +1073,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1092925799}
         m_TargetAssemblyTypeName: MenuUIHandler, Assembly-CSharp
-        m_MethodName: NewPlayer
-        m_Mode: 2
+        m_MethodName: StoreUserName
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1274,7 +1274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45733905a9aa8844e8ae187dd26fe9ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoretext: {fileID: 0}
 --- !u!1 &1107983152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,7 +1754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1628491566}
-  - component: {fileID: 1628491565}
+  - component: {fileID: 1628491567}
   m_Layer: 0
   m_Name: MainManager
   m_TagString: Untagged
@@ -1763,19 +1762,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1628491565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1628491564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00cef53961e9bdd49bca67eea49f91f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 0}
 --- !u!4 &1628491566
 Transform:
   m_ObjectHideFlags: 0
@@ -1791,3 +1777,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1628491567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628491564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75946f6b1c2b7e246abbba96d010c2dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: 

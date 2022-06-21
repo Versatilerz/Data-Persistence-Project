@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -15,40 +16,11 @@ using TMPro;
 
 public class MenuUIHandler : MonoBehaviour
 {
-    public TextMeshProUGUI scoretext;
-  
-    public void NewPlayer(TextMeshProUGUI name)
+    public MainManager manager;
+
+    public void StoreUserName(string name)
     {
-        MainManagerX.Instance.playerName = name;
-    }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public void StartNew()
-    {
-        SceneManager.LoadScene(1);
+        NewMainManager.Instance.input = name;
     }
 
     public void Exit()
@@ -63,9 +35,19 @@ public class MenuUIHandler : MonoBehaviour
     
     }
 
+   
+
+    public void StartNew()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void Return()
     {
+        
         SceneManager.LoadScene(0);
+        
+        
     }
 
 }

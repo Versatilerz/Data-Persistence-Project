@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
-public class MainManagerX : MonoBehaviour
+
+public class NewMainManager : MonoBehaviour
 {
-
-    public static MainManagerX Instance;
-    public TextMeshProUGUI playerName;
+    public static NewMainManager Instance;
+    public string input;
+    public string HighScoreSave;
+    public int highscore;
+    
+   
 
     private void Awake()
     {
-
-       
 
         if (Instance != null)
         {
@@ -21,8 +23,8 @@ public class MainManagerX : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        
     }
 
-
-
+   
 }
