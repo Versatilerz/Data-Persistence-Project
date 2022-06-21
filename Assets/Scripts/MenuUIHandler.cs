@@ -25,6 +25,8 @@ public class MenuUIHandler : MonoBehaviour
 
     public void Exit()
     {
+        NewMainManager.Instance.SaveHighScoreJSON();
+
 
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
@@ -49,5 +51,18 @@ public class MenuUIHandler : MonoBehaviour
         
         
     }
+
+
+    public void SavehighScoreClicked()
+    {
+        NewMainManager.Instance.SaveHighScoreJSON();
+    }
+
+    public void LoadhighscoreClicked()
+    {
+        NewMainManager.Instance.LoadHighScoreJSON();
+        
+    }
+
 
 }
